@@ -1,0 +1,254 @@
+*{
+    padding:0;
+    margin:0;
+}
+html,body{
+    width:100%;
+    max-width: 100%;
+}
+@font-face {
+    font-family: catamaran;
+    src: url("../fonts/Catamaran.woff");
+}
+@font-face {
+    font-family: somatic;
+    src: url("../fonts/Somatic-Rounded.woff");
+}
+@font-face {
+    font-family: ty;
+    src: url("../fonts/typold.woff");
+}
+
+.navbar{
+    height:50px;
+    width:100%;
+    background-color:#fafafa;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 80px;
+    color:black;
+    font-family: catamaran;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.navbar img{
+    height:40px;
+    margin-left: 150px;
+}
+
+#p{
+    font-family: catamaran;
+    text-align: center;
+    font-size: 23px;
+    color:#007FFF;
+}
+#heart{
+    height:16px;
+
+}
+
+.toyota{
+    height:790px;
+    width:100%;
+    background-color: black;
+}
+.toyota h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color:white;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 50px;
+}
+.toyota h3{
+    font-family: catamaran;
+    color:white;
+    text-align: center;
+    font-size:20px;
+}
+.card1{
+    width:50%;
+    color:black;
+    display: block;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height:20%;
+    font-family: ty;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.card1 h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.card1 h1{
+    font-weight: bolder;
+    font-size: 49px;
+    font-family: catamaran;
+}
+.card1 p{
+    text-align: center;
+    color:#C5C6D0;
+    font-weight: bold;
+    font-size:25px;
+    display: block;
+    margin:0 auto;
+    width:85%;
+}
+.card1 h3{
+    font-family: catamaran;
+    color:#007FFF;
+    font-size: 23px;
+    text-align: center;
+}
+.card2{
+    width:50%;
+    color:black;
+    display: block;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height:40%;
+    font-family: ty;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.card2 h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.card2 h1{
+    font-weight: bolder;
+    font-size: 49px;
+    font-family: catamaran;
+}
+.card2 p{
+    text-align: center;
+    color:#C5C6D0;
+    font-weight: bold;
+    font-size:25px;
+    display: block;
+    margin:0 auto;
+    width:85%;
+}
+.card2 h3{
+    font-family: catamaran;
+    color:#007FFF;
+    font-size: 23px;
+    text-align: center;
+}
+#tablet{
+    display: block;
+    margin:0 auto;
+    height:500px;
+    
+
+}
+
+.branding{
+    background-color:#fafafa;
+    width:100%;
+    height:850px;
+
+}
+
+#brand{
+    display: block;
+    margin:0 auto;
+    height:500px;
+    
+
+}
+.card3{
+    width:50%;
+    color:black;
+    display: block;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    height:40%;
+    font-family: ty;
+    text-align: center;
+    margin-top: 50px;
+
+}
+.card3 h1{
+    font-weight: bolder;
+    font-size: 49px;
+    font-family: catamaran;
+}
+.card3 p{
+    text-align: center;
+    color:#C5C6D0;
+    font-weight: bold;
+    font-size:25px;
+    display: block;
+    margin:0 auto;
+    width:85%;
+}
+.card3 h3{
+    font-family: catamaran;
+    color:#007FFF;
+    font-size: 23px;
+    text-align: center;
+}
+
+#mac{
+    display: block;
+    margin:0 auto;
+    height:700px;
+    
+
+}
+.footer{
+    bottom:0;
+    position: relative;
+    height:500px;
+    background-color: #fafafa;
+    color:black;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 130px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-family:catamaran;
+    font-weight: lighter;
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    height:300px;
+
+
+}
+.column p{
+    font-size: 20px;
+}
+
+.column img{
+    height:50px;
+    width:33px;
+
+}
+#bold{
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+
