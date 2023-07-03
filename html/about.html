@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script>
+        const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+document.querySelector("h1").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
+}
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="../images/infinity.png">
+        <h3>Design</h3>
+         <h3>Branding</h3>
+         <h3>Development</h3>
+         <h3>About</h3>
+         <h3>Blog</h3>
+         <h3>Contact</h3>
+    </div>
+    <br>
+    <div class="card">
+       <h4>About</h4><br><br>
+       <p>We design and develop web and mobile apps for startups, small and medium businesses</p> 
+    </div>
+    <br>
+    <img src="../images/break.webp" id="parallax1">
+    <div class="card1">
+        <h4>Our goal</h4><br><br>
+        <p>
+            At Parsly we are passionate about helping businesses thrive in the digital landscape. With a dynamic team of creative minds, tech enthusiasts, and marketing strategists, we provide innovative solutions to drive your online success.</p>
+
+    </div>
+    <!-- <img src="../images/parsly.jpeg" id="parsly"> -->
+
+    <div class="card1"><br>
+        <h4>Our Mission</h4>
+        <br>
+        <p>Our mission is to empower businesses of all sizes to harness the power of the digital world. We believe that every brand has a unique story to tell, and we are here to amplify your voice and connect you with your target audience. Our goal is to deliver exceptional results by combining cutting-edge technology, data-driven insights, and creative expertise.</p>
+    </div>
+    <br>
+    <p id="main1">What sets us apart</p>
+    <div class="cards">
+        <div class="mission"><br>
+            <img src="../images/mac.jpeg"><br>
+            <h1 data-value="HYPERPLEXED">Expertise </h1>
+            <p>Our team comprises highly skilled professionals who excel in their respective fields. From web development and design to digital marketing and branding, we have the expertise to tackle any challenge and exceed your expectations.</p>
+        </div>
+        <div class="mission"><br>
+            <img src="../images/tablet.jpeg"><br>
+            <h1 data-value="HYPERPLEXED" >Tailored Solutions </h1>
+            <p> We understand that every business has its own goals and requirements. That's why we take a personalized approach to create tailor-made strategies that align with your vision. Our solutions are crafted to maximize your online presence and achieve measurable results.</p>
+            
+        </div>
+        <div class="mission"><br>
+            <img src="../images/brand.png"><br>
+            <h1 data-value="HYPERPLEXED">Innovation </h1>
+            <p> The digital landscape is ever-evolving, and we stay at the forefront of the latest trends and technologies. By leveraging innovative tools and techniques, we help you stay ahead of the competition and adapt to the changing needs of your target audience.</p>
+            
+        </div>
+        
+    </div>
+    <br>
+    <p id="main1">Our Services</p>
+    <div class="cards">
+        <div class="mission1"><br>
+            <h1 data-value="HYPERPLEXED">Web Development </h1>
+            <p> We create stunning and user-friendly websites that capture your brand's essence and engage your audience.</p>
+        </div>
+        <div class="mission1"><br>
+            <h1 data-value="HYPERPLEXED" >Digital Marketing </h1>
+            <p> Our digital marketing experts employ effective strategies to increase your online visibility, drive traffic, and convert leads into customers.</p>
+            
+        </div>
+        <div class="mission1"><br>
+            
+            <h1 data-value="HYPERPLEXED">Branding and Design </h1>
+            <p>We develop compelling brand identities, logos, and designs that resonate with your target audience and leave a lasting impression. </p>
+            
+        </div>
+        
+    </div>
+
+    <div class="cards">
+        <div class="mission1"><br>
+            <h1 data-value="HYPERPLEXED">SEO and SEM </h1>
+            <p>Our search engine optimization and search engine marketing techniques help you rank higher in search results and attract quality traffic to your website.</p>
+        </div>
+        <div class="mission1"><br>
+            <h1 data-value="HYPERPLEXED" >Social Media Management </h1>
+            <p> We harness the power of social media platforms to build your brand, engage with your audience, and drive meaningful interactions.</p>
+            
+        </div>
+        <div class="mission1"><br>
+            
+            <h1 data-value="HYPERPLEXED">E-commerce Solutions </h1>
+            <p>We create seamless and secure e-commerce experiences that drive sales and maximize conversions.
+                </p>
+            
+        </div>
+        
+    </div>
+
+    
+
+
+
+
+
+</body>
+</html>
